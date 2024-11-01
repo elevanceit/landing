@@ -2,20 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --divider-grey: #ffffff1a;
+  --text-darken-1: #CED3DB;
+  --text-darken-2: #9097A6;
+  --text-darken-3: #69707D;
+  --text-Base: #111;
+  --brand-gradient-1: linear-gradient(90deg, #FFB63F 0.1%, #F08B21 41.87%, #CC5920 75.81%, #0D0D0D 104.53%, #000 130.64%);
+  --primary-brown: #CC5920;
+  --hover-grey: #9097a61a;
+  --hover-brown: #F08B21;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --divider-grey: #ffffff1a;
+    --text-darken-1: #CED3DB;
+    --text-darken-2: #9097A6;
+    --text-darken-3: #69707D;
+    --text-Base: #fff;
+    --brand-gradient-1: linear-gradient(90deg, #FFB63F 0.1%, #F08B21 41.87%, #CC5920 75.81%, #0D0D0D 104.53%, #000 130.64%);
+    --primary-brown: #CC5920;
+    --hover-grey: #9097a61a;
+    --hover-brown: #F08B21;
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.bg-brand-gradient {
+  background: var(--brand-gradient-1);
+  background-clip: text;
 }
