@@ -24,9 +24,9 @@ const Button: React.FC<ButtonProps> = ({
     iconPosition = 'left',
 }) => {
     const baseStyles = "w-fit text-white font-semibold text-sm focus:outline-none flex items-center justify-center";
-    const primaryStyles = "bg-primary-brown hover:bg-hover-brown py-3 px-8";
-    const secondaryStyles = "bg-transparent border border-white hover:bg-hover-grey py-3 px-8";
-    const iconStyles = "!py-2 !px-2";
+    const primaryStyles = "bg-primary-brown hover:bg-hover-brown px-4 py-2 lg:py-3 lg:px-8";
+    const secondaryStyles = "bg-transparent border border-white hover:bg-hover-grey px-4 py-2 lg:py-3 lg:px-8";
+    const iconStyles = "!px-1 !py-1 lg:!py-2 lg:!px-2";
     const roundedStyles = "rounded-full";
     const rectStyles = "rounded";
 

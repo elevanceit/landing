@@ -38,8 +38,8 @@ const pageData = {
 
 const CallToAction = () => {
     return (
-        <div className="flex flex-col w-full pb-25">
-            <h2 className="text-textprimary text-50 px-10 pt-25 pb-15">{pageData.title}</h2>
+        <div className="flex flex-col w-full pb-10 lg:pb-25">
+            <h2 className="text-textprimary text-2xl lg:text-50 px-2 pt-10 pb-8 lg:px-10 lg:pt-25 lg:pb-15">{pageData.title}</h2>
             <div className="flex w-full flex-wrap">
                 {pageData.cards.map((card, index) => (
                     <Card key={index} title={card.title} text={card.text} btnText={card.btnText} icon={card.icon} iconWhite={card.iconWhite} />

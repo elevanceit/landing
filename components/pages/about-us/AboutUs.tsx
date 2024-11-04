@@ -7,7 +7,7 @@ import Footer from "./components/Footer"
 export default function AboutUs() {
   return (
     <>
-      <div className="w-full px-15" style={{ backgroundImage: `url(${BgGradient1.src})`, backgroundSize: 'cover' }}>
+      <div className="w-full px-4 md:px-6 lg:px-15" style={{ backgroundImage: `url(${BgGradient1.src})`, backgroundSize: 'cover' }}>
         <Header />
         <HeroSection />
         <CallToAction />
